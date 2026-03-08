@@ -74,12 +74,7 @@ To enable/disable authentication set `$use_auth` to true or false.
 - To report a bug or request a feature, please file an [issue](https://github.com/prasathmani/tinyfilemanager/issues)
 - [Contributors](https://github.com/prasathmani/tinyfilemanager/wiki/Authors-and-Contributors)
 
-### Use bcrypt for passwords
+### How to hash your own password ?
 
-```shell
-htpasswd -nbBC 10 "" "monNouveauMotDePasse123"
-```
-or
-```shell
-python3 -c "import bcrypt; print(bcrypt.hashpw(b'VOTRE_MOT_DE_PASSE', bcrypt.gensalt(rounds=10)).decode())"
-```
+Add hash.php to your server and run it !
+
